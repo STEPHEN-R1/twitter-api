@@ -267,6 +267,7 @@ app.get('/user/tweets/', authenticateToken, async (request, response) => {
   const list = await database.all(sql)
   response.send(list)
 })
+// api 9
 app.post('/user/tweets/', authenticateToken, async (request, res) => {
   const {username} = request
 
